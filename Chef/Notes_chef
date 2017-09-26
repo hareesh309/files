@@ -1,0 +1,83 @@
+Download Opscode's skeleton Chef repository 
+wget http://github.com/opscode/chef-repo/tarball/master
+git init .
+git remote add origin git@github.com:devopsharish/learning_chef.git
+git status
+git add .
+git commit -m "initial commit"
+git push -u origin master
+
+1.) [vobadm@devops1 chef-repo]$ git push -u origin master
+
+https://www.a2hosting.in/kb/developer-corner/version-control-systems1/403-forbidden-error-message-when-you-try-to-push-to-a-github-repository
+
+git remote set-url origin https://username@github.com/user/repo.git
+
+I just got the same problem and just figured out what's cause.
+
+Github seems only supports ssh way to read&write the repo, although https way also displayed 'Read&Write'.
+
+So you need to change your repo config on your PC to ssh way:
+
+edit .git/config file under your repo directory
+find url=entry under section [remote "origin"]
+change it from url=https://MichaelDrogalis@github.com/derekerdmann/lunch_call.git to url=ssh://git@github.com/derekerdmann/lunch_call.git. that is, change all the texts before @ symbol to ssh://git
+Save config file and quit. now you could use git push origin master to sync your repo on GitHub
+
+ssh-keygen-->Copy id_rsa.pub to settings->SSH and GPG keys-> github
+
+git config --global user.email "your_github_email_@email.com"
+
+git config --global user.name "Your full name"
+
+2.) ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:asantoya/projectnewbies.git'
+git push -f origin master  or git push --force
+http://footle.org/2013/06/27/why-is-git-rejecting-me/
+
+git pull --rebase             # to retrieve upstream changes, replay yours on top
+git push --dry-run --verbose origin HEAD:master   # always good idea: dry-runs..
+git push origin HEAD:master   # actually push current branch head (non-master) to upstream master
+
+
+3.) Pull is not possible because you have unmerged files.
+git merge
+vimdiff
+
+git fetch origin
+git reset --hard origin/master
+git pull
+Explanation above mentioned Command:
+
+Fetch will download everything from another repository, in this case, the one marked as "origin".
+Reset will discard changes and revert to the mentioned branch, "master" in repository "origin".
+Pull will just get everything from a remote repository and integrate.
+See more about git documentation at http://git-scm.com/docs
+
+
+4.) [vobadm@devops1 chef-repo]$ git pull -u origin master
+Enter passphrase for key '/home/vobadm/.ssh/id_rsa':
+A way to solve this is with ssh-agent and ssh-add:
+
+$ exec ssh-agent bash
+$ ssh-add
+Enter passphrase for ~/.ssh/id_rsa: 
+
+
+
+Chef-Workstation:
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+The Omnibus Installer will download Ruby and all the required Ruby gems into /opt/chef/ embedded
+By adding the /opt/chef/embedded/bin directory to your .bash_profile, the Chef command-line tools will be available in your shell.
+
+ echo 'export PATH="opt/chefdk/embedded/bin:$PATH"'>> ~/.bash_profile && source ~/.bash_profile
+
+1.) Hosted Chef by Opscode. ---set up and gives you full control, using users and groups to control the access permissions to your Chef setup.
+ Hosted Chef, you need to sign up for the service. There is a free account for up to five nodes.
+http://www.opscode.com/hosted-chef 
+2.) Own Chef server
+
+prepare your organization to be used with your chef-repo repository.
+
+
+http://www.opscode.com/hosted-chef    ---Create account username: clearcase.harish@outlook.com;, 1harish  org: devops_test1

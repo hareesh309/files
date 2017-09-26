@@ -1,0 +1,62 @@
+sudo yum install kernel-header kernel-devel----Any issue with virtualbox
+Delayed SSH login CentOS:
+vim /etc/ssh/sshd_config
+Then find the line that says
+GSSAPIAuthentication yes
+Change it to
+GSSAPIAuthentication no
+and save the file. Finally, restart the sshd service.
+service sshd restart
+alias dps="docker ps"
+docker version  (More version)--client and server
+docker -v   
+docker info
+docker images--> locally stored images
+docker images --tree---> shows image layers
+docker history image_name--->shows 
+Docker inspect ID ......We can get detailed info. Of container..
+We can run docker inspect against image IDs too…
+Docker attach conatiner 
+
+
+
+FireUp(start) new container:
+docker run -it ubuntu /bin/bash   
+docker run-> start new container:
+it -> make interactive & assign tty
+   Place container on Ubuntu image
+ Inside container run bash process( default)
+ 
+ 
+ sudo docker ps
+ sudo docker ps -a
+ docker ps -l---> last cnatiner exited
+ sudo docker start ContainerID
+ sudo docker attach containerID
+ Docker attach cmd-> attches PID1 inside the container
+Docker pull fedora-- latest
+Docker pull –a fedora 	- pull all feora images from docker hub and store local host
+5 different version of fedora.. But actually only 3 versions(3 different image  ids)...Each image have 1 tag, and can have more.
+
+Doxker images stored-> /var/lib/docker/<storage driver>
+DOCKER RUN :   command to launch container.
+Docker goes and grab image we specify, unpacks it, stacks all layers and build into running conatiner
+
+
+Control+P+Q---> Exit container without killing
+
+
+
+service docker.io status----> Ubuntu
+
+
+
+
+Installation(Ubuntu): 
+service docker.io status
+uname -a   ---Kernal:3.13, Ubuntu: 14.04 64Bit
+apt-get update (sync packages from source)
+apt-get install -y docker.io
+service docker.io status
+docker -v   ---> (docker client throwing cmd to docker daemon.
+Daemon responds client with current version)

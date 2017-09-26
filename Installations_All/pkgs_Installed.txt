@@ -1,0 +1,84 @@
+mkdir /cdrom 
+ mount -r -t iso9660 /dev/sr0 /mnt
+[root@devops7 media]# cd /mnt/
+[root@devops7 mnt]# ls
+CentOS_BuildTag  EFI  EULA  GPL  images  isolinux  LiveOS  Packages  repodata  RPM-GPG-KEY-CentOS-7  RPM-GPG-KEY-CentOS-Testing-7  TRANS.TBL
+
+./VBoxLinuxAdditions.run
+yum update kernel
+  yum install -y gcc kernel-devel kernel-headers dkms make bzip2 perl
+  
+ Save yum rpm packages offline 
+ [main]
+cachedir=/home/devops1/Desktop
+vim /etc/yum.conf
+
+keepcache=1
+debuglevel=2
+logfile=/var/log/yum.log
+exactarch=1
+obsoletes=1
+gpgcheck=1
+plugins=1
+installonly_limit=5
+bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_report_page.php?category=yum
+distroverpkg=centos-release
+
+Chnage grub timeout to 1 sec:
+/etc/default/grub 
+GRUB_TIMEOUT=1
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+
+
+Install CentOS-7 - Minimal (First entry point in list)
+yum groupinstall "X Window System"
+ yum install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts
+unlink /etc/systemd/system/default.target
+ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+ reboot
+
+
+
+ mkdir /cdrom
+   53  mount /dev/cdrom /cdrom
+   54  mount -o loop /root/Desktop/rhel-server-6.6-x86_64-dvd.iso /mnt/cdrom
+   55   mount -o loop /root/Desktop/rhel-workstation-7.2-x86_64-dvd.iso /cdrom
+
+   
+   vim /etc/yum.repos.d/local.repo
+   [LocalRepo]
+name=Local Repository
+baseurl=file:///cdrom
+enabled=1
+gpgcheck=0
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+   
+ mkdir /cdrom
+ mount -o loop /root/Desktop/rhel-workstation-7.2-x86_64-dvd.iso /cdrom
+ vim /etc/yum.repos.d/local.repo
+  [LocalRepo]
+name=Local Repository
+baseurl=file:///cdrom
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+   
+ mount -r -t iso9660 /dev/sr0 /mnt
+ yum install epel-release
+
+ 
+
+setup
+yum install setuptool -y
+yum install system-config-network* -y
+yum install system-config-firewall* -y
+yum install system-config-securitylevel-tui -y
+yum install system-config-keyboard -y
+yum install ntsysv -y
+
+
+
+yum install net-tools
