@@ -1,0 +1,64 @@
+Share a cvob...rooted and rootless..
+magicfile
+Create type...element types..
+Change element type..rpy type
+Any trigger scripts written
+how to convert a vob to cvob
+fixprot
+protectvob and protect
+ccfs enable during installation...How to enable samba
+(region for windows)
+license--atria?
+vob size and backup procedure
+backup for writing...vmware..us time also...vob should be working..
+Disater recovery--easiest way..?
+ufsdump
+vob consistency
+scrub pvob and cvob.
+corrupt vob fix
+How often do you scrub vobs
+can i scrub cvob
+storage pools.
+ucmutil...ucmfix
+rebase issues.
+(rebase can do checkouts?)
+perl scripting
+Cases when view is not removed
+remove reference checkouts
+view tag--obj tag  remove..will storage will be removed
+access vobs--users on solaris server,AD domain sync
+Lock vob--preven access
+diff.between deliver and rebase
+issues faced b/w cc-7.1.2 and cc-8
+Difference faced b/w cc-8,than cc-7.1.2
+How to increase featurelevel
+How to update schema or database level
+How to find vob size
+How many users? solaris server--blue screen..how many vobs..
+
+nagios on server
+NAS box shutdown---what happens
+Day to day user activities faced
+have u tried learning multiste and clearquest
+Bug management tool? only activity based..we used..
+Desribe your solaris server
+Describe your cc envirnoment
+Microsoft teammmserver..
+
+any version control tools..git?
+ccrc..?
+web views?
+Where is view_server process?on vob/view_server?
+
+Dynamic views view_server process on vob_server?
+How many vob servers u have---1
+2 remote locations--bangalore and mumbai...Issues faced as there is one server only?
+Most toughest issue faced--elements missing,nfs --unix in clearcase not working.
+How often u contact ibm
+
+WAN SLOW issue
+
+
+
+
+Buildforge

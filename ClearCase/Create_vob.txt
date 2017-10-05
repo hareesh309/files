@@ -1,0 +1,66 @@
+cleartool mkvob -tag \GMT_ProjectStage_1017 -ucmproject -nc \\ukatramekw002\vobs\GMT_ProjectStage_1017.vbs
+
+cleartool mkvob -tag \GMT_DataStage_1017  -nc \\ukatramekw002\vobs\GMT_DataStage_1017.vbs
+
+E:\VOBS>set PATH=%PATH%;E:\IBM\RationalSDLC\ClearCase\etc\utils
+
+E:\IBM\RationalSDLC\ClearCase\etc\utils>fix_prot -root -chown "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramekw002\vobs\GMT_ProjectStage_1017.vbs"
+
+
+E:\IBM\RationalSDLC\ClearCase\etc\utils>fix_prot -root -chown "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs"
+
+
+E:\IBM\RationalSDLC\ClearCase\etc\utils>fix_prot -r -chown "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs"
+
+
+E:\IBM\RationalSDLC\ClearCase\etc\utils>fix_prot -r -chown "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramekw002\vobs\GMT_ProjectStage_1017.vbs"
+
+
+
+M:\s-uk_sc_methodscc_GMT_ProjectStage_1017_int\GMT_DataStage_1017>cleartool prot
+ect -chgrp "ATREMA\Methods TS Users Group" .
+cleartool: Error: Can't change to a group (ATREMA\Methods TS Users Group) that i
+s not in the VOB's group list.
+cleartool: Error: Unable to change protection on ".".
+
+M:\s-uk_sc_methodscc_GMT_ProjectStage_1017_int\GMT_DataStage_1017>cleartool prot
+ectvob -chgrp "ATREMA\Methods TS Users Group" .
+This command affects the protection on your versioned object base.
+While this command is running, access to the VOB will be limited.
+cleartool: Warning: Versioned object base group is already "ATREMA\Methods TS Us
+ers Group".
+Pool "sdft" appears to be protected correctly.
+Pool "ddft" appears to be protected correctly.
+Pool "cdft" appears to be protected correctly.
+Protect versioned object base "."?  [no] yes
+Do you wish to protect the pools that appear not to need protection?  [no] yes
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\db\logs"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\db"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\admin\do_space"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\admin\vob_space"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\admin"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\s\sdft\22\3"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\s\sdft\22"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\s\sdft"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\d\ddft"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\c\cdft\29\1d"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\c\cdft\29"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\c\cdft\3c\17"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\c\cdft\3c\27"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\c\cdft\3c"...
+Protecting "\\ukatramekw002\vobs\GMT_DataStage_1017.vbs\c\cdft"...
+VOB ownership:
+  owner ATREMA\s-uk_sc_methodscc
+  group ATREMA\Methods TS Users Group
+
+M:\s-uk_sc_methodscc_GMT_ProjectStage_1017_int\GMT_DataStage_1017>cleartool prot
+ect -chgrp "ATREMA\Methods TS Users Group" .
+Changed protection on ".".
+
+
+FOR PVOB: C:\>cleartool protectvob -chgrp "ATREMA\Methods TS Users Group" \\ukatramekw002\
+vobs\GMT_ProjectStage_1017.vbs
+
+
+
+

@@ -1,0 +1,17 @@
+cat /etc/ansible/hosts
+
+ansible all --list-hosts
+ansible all -m  ping
+ansible devopsclient -m  ping
+ansible devopsclient -i hosts  -m ping--->override
+ansible local -m setup 
+ansible localhost -m setup --tree /tmp/facts
+ansible localhost -m setup -a 'filter=*ipv4*'
+ ansible devopsclient -s -m yum -a 'pkg=telnet state=installed update_cache=true'
+  ansible-playbook --syntax-check appserver.yaml
+  ansible-playbook -s appserver.yaml
+  
+  
+  [root@devopsclient log]# ps -aef | grep -in httpd
+[root@devopsclient log]# yum list| grep -in httpd--->Available in Yum repo
+[root@devopsclient log]# yum list installed | grep -in httpd --->installed??
