@@ -4,14 +4,84 @@ ansible all --list-hosts
 ansible all -m  ping
 ansible devopsclient -m  ping
 ansible devopsclient -i hosts  -m ping--->override
-ansible local -m setup 
+ansible local -m setup
 ansible localhost -m setup --tree /tmp/facts
 ansible localhost -m setup -a 'filter=*ipv4*'
  ansible devopsclient -s -m yum -a 'pkg=telnet state=installed update_cache=true'
   ansible-playbook --syntax-check appserver.yaml
   ansible-playbook -s appserver.yaml
-  
-  
+
+
   [root@devopsclient log]# ps -aef | grep -in httpd
 [root@devopsclient log]# yum list| grep -in httpd--->Available in Yum repo
 [root@devopsclient log]# yum list installed | grep -in httpd --->installed??
+
+Setup---Let’s say I want to install apache. I want to know about distribution and version available across all servers configured in hosts file.
+ansible client -m setup -a "filter=ansible_interfac*"
+
+File---Change ownership of file, copy file, setup new dir
+ansible client -m file -a 'path=/tmp/etc state=directory mode=0777 owner=ansible'
+
+COPY---The `copy' module copies a file on the local box to remote locations. Use the [fetch] module to copy files from
+ remote locations to the local box. If you need variable interpolation in copied files, use the [template] module.
+ansible client -m copy -s -a 'src=/etc/fstab dest=/tmp/etc/fstab'
+
+RAW---Executes a low-down and dirty SSH command, not going through the module subsystem. This is useful and should only
+ be done in two cases. The first case is installing `python-simplejson' on older (Python 2.4 and before) hosts that
+ need it as a dependency to run modules, since nearly all core modules require it. Another is speaking to any
+ devices such as routers that do not have any Python installed. In any other case, using the [shell] or [command]
+ module is much more appropriate. Arguments given to `raw' are run directly through the configured remote shell.
+ Standard output, error output and return code are returned when available. There is no change handler support for
+  this module. This module does not require python on the remote system, much like the [script] module.
+ansible client -m raw -a 'cat /tmp/etc/fstab'
+
+COMMAND---The `command' module takes the command name followed by a list of space-delimited arguments. The given command
+will be executed on all selected nodes. It will not be processed through the shell, so variables like `$HOME' and
+operations like `"<"', `">"', `"|"', `";"' and `"&"' will not work (use the [shell] module if you need these
+features).
+ ansible client -m command -a 'rm -rf /tmp/etc/fstab'
+
+PAUSE--- It stops execution of playbook either a key is pressed for certain amount of time.
+Generally we provide when a  user need confirmation to continue..
+Ex: 1.)We want to Deploy a webserver... but we want user to test webserver, before we continue on rest of playbook that do other things.
+2.) We can use pause module, So that we can Pause without killing or   running multiple jobs which needs user input.
+3.) We can use Prompt and get information about a variable
+It is never used a much as wait-for module, because it is less interactive method of pausing playbook.
+- name: Pausing
+    pause:
+     prompt="Make sure installation is complete"
+ - name: Pausing
+    pause:
+     seconds=3
+WAIT_FOR:
+--Wait for some dependency like  file or restore database or port to be listening.
+Won’t continue playbook until port excepts remote connection
+
+YUM:---Used for package manipulation of remote clients
+Query, remove, install pkgs
+State=present or installed—any one
+         yum:  name=tomcat state=installed
+Remove  -->absent
+Update-->latest
+
+SERVICE:
+Enable/Disable services for entire environment. If I have a host group environment DEV.
+I make change for one configuration; can be applied to all in DEV env...
+COPY MODULE:
+COPY files from local to remote including setting of user, group ownership, R/W
+Bakup files
+
+COMMAND---
+Fills in.., when Used to run commands when modules doesn’t exist by using builtin shell over ssh.
+- chdir
+        cd into this directory before running the command
+
+COPY----Particular useful in builds, checking code from github and copying config. Files when changed in dir inside group f services.
+Ex: When changed apache vhost config. for particular website and have 5 webservers in cluster..We can use single copy command and copy that to all individual servers. Then, use service module to restart service on all webservers
+
+DEBUG:Troubleshoot, what values set to variables..
+
+---CRON MODULE:
+If not given will run every day of month
+Every week of month @1 am
+

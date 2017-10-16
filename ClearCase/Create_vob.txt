@@ -64,3 +64,136 @@ vobs\GMT_ProjectStage_1017.vbs
 
 
 
+
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>cleartool protectvob
+ -add_group "ATREMA\Methods TS Users Group" .
+This command affects the protection on your versioned object base.
+While this command is running, access to the VOB will be limited.
+Pool "sdft" appears to be protected correctly.
+Pool "ddft" appears to be protected correctly.
+Pool "cdft" appears to be protected correctly.
+Protect versioned object base "."?  [no] yes
+Do you wish to protect the pools that appear not to need protection?  [no] yes
+cleartool: Error: Trouble protecting versioned object base ".".
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>fix_prot -root -chow
+n "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramek
+w002\vobs\GMT_ProjectQA_1017.vbs"
+Re-protect "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs"?  [no] yes
+Reprotection complete.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>fix_prot -root -chow
+n "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramek
+w002\vobs\GMT_DataQA_1017.vbs"
+Re-protect "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs"?  [no] yes
+Reprotection complete.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>fix_prot -root -chow
+n "ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramek
+w002\vobs\GMT_DataQA_1017.vbs"
+Re-protect "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs"?  [no] yes
+Reprotection complete.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>fix_prot -r -chown "
+ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramekw00
+2\vobs\GMT_DataQA_1017.vbs"
+CAUTION! This program reprotects every file and directory in a
+storage directory tree and should be used only when the protection
+has been damaged (e.g., through the process of copying the tree or by
+direct manipulation through a tool like the File Manager/Explorer).
+Re-protect "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs"?  [no] yes
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\admin\do_space"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\admin\vob_space"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\admin"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\c\cdft"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\c"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\d\ddft"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\d"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\db\logs"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\db"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\s\sdft"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs\s"...
+Protecting "\\ukatramekw002\vobs\GMT_DataQA_1017.vbs"...
+Reprotection complete.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>fix_prot -r -chown "
+ATREMA\s-uk_sc_methodscc" -chgrp "ATREMA\Methods TS Users Group" "\\ukatramekw00
+2\vobs\GMT_ProjectQA_1017.vbs"
+CAUTION! This program reprotects every file and directory in a
+storage directory tree and should be used only when the protection
+has been damaged (e.g., through the process of copying the tree or by
+direct manipulation through a tool like the File Manager/Explorer).
+Re-protect "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs"?  [no] yes
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\admin\do_space"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\admin\vob_space"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\admin"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\c\cdft"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\c"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\d\ddft"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\d"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\db\logs"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\db"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\1c\2e"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\1c"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\21\6"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\21"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\23\32"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\23"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\38\a"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\38"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\3b\35"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\3b"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\3c\20"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\3c"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\4\8"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\4"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\e\10"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft\e"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s\sdft"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs\s"...
+Protecting "\\ukatramekw002\vobs\GMT_ProjectQA_1017.vbs"...
+Reprotection complete.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>cleartool desc .
+directory version ".@@\main\0"
+  created 2017-10-09T13:22:11Z by s-uk_sc_methodscc.Domain Users@ukatramekw002
+  protected by rolemap: "DefaultRolemap"
+  effective access for user "s-uk_sc_methodscc": Full
+  Element Protection:
+    User : ATREMA\s-uk_sc_methodscc : rwx
+    Group: ATREMA\Domain Users : rwx
+    Other:          : rwx
+  element type: directory
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>cleartool protect -c
+hgrp "ATREMA\Methods TS Users Group" .
+Changed protection on ".".
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>cleartool desc .
+directory version ".@@\main\0"
+  created 2017-10-09T13:22:11Z by s-uk_sc_methodscc.Domain Users@ukatramekw002
+  protected by rolemap: "DefaultRolemap"
+  effective access for user "s-uk_sc_methodscc": Full
+  Element Protection:
+    User : ATREMA\s-uk_sc_methodscc : rwx
+    Group: ATREMA\Methods TS Users Group : rwx
+    Other:          : rwx
+  element type: directory
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>cleartool mkact impo
+rt_activity
+Created activity "import_activity".
+Set activity "import_activity" in view "s-uk_sc_methodscc_GMT_ProjectQA_1017_int
+".
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>cleartool setact -no
+ne
+Cleared current activity from view s-uk_sc_methodscc_GMT_ProjectQA_1017_int.
+
+M:\s-uk_sc_methodscc_GMT_ProjectQA_1017_int\GMT_DataQA_1017>
+
+
+

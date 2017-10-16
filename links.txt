@@ -1,0 +1,6 @@
+Set line number default:
+/etc/vimrc  ---se nu
+
+http://xbmcnut.blogspot.in/2016/10/my-notepad-tricks-when-editing-yaml.html
+https://community.home-assistant.io/t/tips-for-editing-yaml-with-notepad/4295
+http://allthingsmarked.com/2009/07/29/associate-file-extensions-with-specific-languages-in-notepad-plus-plus/

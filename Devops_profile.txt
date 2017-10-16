@@ -1,0 +1,200 @@
+
+As a Devops Engineer I have an experience of 3+years in Automation, Configuration Management and Cloud Services
+--	Experience in building CI/CD pipeline as an iterative process using Jenkins.
+--	Experience in using Nexus repository manager & JFrog centralized repository for versioning artifacts and deploying it to application servers
+--	Define best practices for source control, continuous integration, automated testing and release management
+--	3+ years of Build / Configuration Management / Release Engineering experience maintaining Code, Deploying, Migrating code from Development, Test, QA to Production environments working closely with developers/Mangers reporting build failures report generation/build automation.
+--	Hands-on Linux with expertise in Unix Systems Engineering, Red Hat Linux, Centos or Ubuntu.
+--	Hands-on with AWS environment including VPC, EC2, EBS, S3, RDS, SQS, Cloud Formation, Lambda and Redshift. 
+--	Hands-on with DevOps Automation including Orchestration/ Configuration Management and CI/ CD tools comprising of Ansible, Chef, Puppet, Jenkins, etc. 
+--	Ability to adapt quickly to new open source technologies and deploy the most appropriate tools.
+
+Technical Skills: 
+Cloud Computing : OpenStack,AWS,IBM Blue Mix
+Server OS : Redhat Linux, Sun Solaris, Ubuntu,CentOS Redhat Services : Apache, FTP, Samba, NFS
+Monitoring Tools : HP open view, Nagios
+Operating Systems Windows, Ubuntu, Centos Configuration Tools Ansible, Puppet
+CI/CD Tool Jenkins
+Cloud Technology Amazon Web Services Version Control Tool GIT
+Monitoring tools Cloud Watch Virtualization Virtual Box, Vagrant Containerization Docker
+Scripting Bash Scripting, Python Scripting Artifact Repository Manager Nexus
+
+
+Data center migration from at&t data center to IBM data center soft layer and AWS. I am the team member for this project working as Devops Engineer . I am responsible for support of the systems during the migration and installation and configuration to move physical data center to IBM Cloud and AWS.
+BackUP:
+Backup and Recovery of design and implement big data backup/ recovery solutions. 
+
+Monitoring
+Use monitoring tools such as AWS CloudWatch, Nagios or Splunk.
+
+SVN
+--	Written pre-commit, post-commit, post-receive hooks in SVN for Linux environment using shell scripting
+--	Re-structured the development methodology with respect to SVN and proposed best branching strategies in SVN
+--	Migrated source code from SVN to GIT along with the history.
+
+GIT
+
+--Private Git server i=on Windows(Git server on private n/w)
+
+--	Installed and configured Gitweb for Git
+--	Updated existing shell scripts to reflect GIT changes
+--	Updated all the Jenkins Continuous Integration jobs, dependent jobs, snapshot jobs, release jobs, DB deployment jobs to reflect GIT changes
+-- Install the GIT and configure the global credential.
+-- created the GIT Hub repository and Push the changes to the GIT Hub.
+-- Pull the changes for from the GIT Hub.
+-- Created the branches and labels and apply the tags to the Branches.
+-- Propagating the changes from one branch to another Branch.
+-- Help to developer to create workspace in their machines.
+•	Labelling/Branching/Merging and other SCM work (currently using Git, Subversion)
+
+MAVEN:
+--	Maintained local team repositories and Organization's central repositories for maven.
+--	Created Maven POMs to automate the build process for the new projects and integrated them with third party tools like Sonar, Nexus.
+--	Expertise with Maven Dependency, plugin and nexus repository management during the builds.
+--	
+
+Jenkins:
+Working on Build Management activities for Different applications using Jenkins
+Working on Release Management Activities.
+--	Configured Git with Jenkins and schedule jobs using POLL SCM and option.
+--	configuring Jenkins jobs in such a way that fetches source code from Git repository.
+--	Configured Jenkins with maven build tool in generating war/ear files and archived them.
+--	Responsible for installing Jenkins master and slave nodes.
+--	Create and setup automated build environment for java projects using maven.
+--	Deployed builds to different environments like DEV, QA, UAT environments by integrating Jenkins and Ansible.
+--	Integrated Git, Jenkins and maven in accomplishing continuous integration and configured Jenkins with Poll SCM build trigger.
+--	Upgraded Jenkins from 1.52 to 1.59
+
+1. Creation of Jenkins jobs.
+2. Maintain build configuration changes for the Jenkins jobs.
+3. Health check /space management of all the Jenkins servers.
+4. Grant/revoke access.
+5. Cluster allocation.
+6. Resolve the build/deployment issues
+--	Configured Jenkins nodes to build jobs in the view of distributing the load of jenkins server and achieved parallel builds
+--	Familiar with matrix based security in jenkins to restrict the users of jenkins at different levels.
+--	 Configured Jenkins job with Maven build tool and accomplished continuous deployment by integrating Ansible and jenkins using jenkins plugins.
+--	Creating Jenkins jobs and distributing load on Jenkins server by configuring Jenkins nodes, which will enable parallel builds.
+--	Maintaining continuous build automation - currently implemented with Maven and Ant run within Hudson/ Jenkins.
+--	Implemented multi-parallel jobs in Jenkins which does CI, packaging, Sonar job and deployment job to difference environments such as DEV, TEST and PROD
+--	Installed Jenkins and perform troubleshooting during installation to implement the CI process for the java application builds.
+--	Created Slaves to implement the build farm where multiple builds run on multiple slave machines in Jenkins
+
+--	Successfully integrated SonarQube with Jenkins for continuous inspection of code quality
+
+ANSIBLE Hands-on with Ansible / Tower or similar deployment tools is essential.
+
+--	We are using Ansible as primary automation tool in configuring and deploying artifacts to several environments.
+--	Deploying the artifacts into servers in AWS cloud with ansible and jenkins.
+--	Bundled automation content with Ansible roles to make the content reusable and made possible advanced execution in automation.
+
+--	Expertise in using Configuration Management tool Ansible
+--	Experience in provisioning, orchestration, configuring nodes and deployment using ansible.
+--	Profound experience in writing Ansible playbooks to configure systems and created Roles as a prophecy for reusability of playbooks.
+--	Experience in Building, configuring and managing EC2 instances with Ansible playbook. Experience on installation of Apache, Tomcat, MySQL and Nginx. Written playbooks to install and configure these packages
+--	Experience on Automating the Build and Deploy of PHP, Python and Java applications to different environments by using Ansible and Jenkins.
+--	Developing Ansible Playbooks for different scenarios to manage the infrastructure and integrating with CI / CD (Jenkins)
+
+DOCKER
+--	Knowledge on using Docker and recently working on Docker for successful setup of Dev & Test environment for Developers and Testers by using Docker Build & Docker Compose.
+--	Knowledge on Kubernetes to manage clusters of containers
+--	Involved in Writing Docker files to build customized images for creating containers.
+--	Configuring the Docker containers and creating docker files for different environments.
+
+
+AWS:
+Hands-on with AWS environment including VPC, EC2, EBS, S3, RDS, SQS, Cloud Formation, Lambda and Redshift. 
+Implement Auto scaling for instances under ELB using ELB Health Checks. 
+Hands-on with S3 bucket, IAM and its policy management to restrict users to particular AWS Resources. 
+Hands-on AWS Storage Gateway, Code Deployment, IDS/IPS solution for security of web applications including Directory Service, Route 53, Cloud front, 
+
+
+--   AWS EC2, EBS, VPC and other AWS services.
+-- Familiar in Amazon S3 - To Create Buckets, Upload Data, Set Permissions
+-- Familiar in How to Setup Amazon Web Services EC2 Instance with Apache, PHP, MySQL
+--	-- Creating a VPC, Subnets, and Base Security Groups Hands on experience of AWS services in the process of providing cloud based solutions to client.
+--	Hands on Experience on AWS CLI ( Command Line Interface)
+--	Expertise in creating backup of EBS and restoring it in the desired region
+--	Expertise in managing Auto scaling and Cloud watch services for applications
+--	Experience in creating Highly available VPC for applications with high security using NACL and Security Groups.
+--	Experience in configuring and using S3FS and S3cmd for artifact storage management and backups.
+--	Hands on experience in establishing different environments using Elastic Beanstalk.
+--	Knowledge on Cloudformation and Terraform to manage the Infrastructure of AWS Resources
+--	Configure, monitor and automate Amazon Web Services.
+--	Created and managed custom CentOS and Linux based AMIs.
+--	Involved in deploying the content cloud platform on Amazon Web Services using EC2, S3.
+--	Creating S3 buckets and also managing policies for S3 buckets
+--	Setup Elastic Load Balancer for distributing traffic among multiple Web servers.
+--	Creating backup of EBS volumes and restoring it.
+--	Ensuring the servers to sustain the load by configuring Elastic load balancer &Auto scaling.
+--	Enabling highly available & robust virtual private cloud to ensure the network isolation from public cloud and securing them with Security groups and NACL.
+--	As most of the infrastructure is hosted in AWS cloud I am responsible for creating and managing EC2 Instances.
+--	Configuring EC2 instances with Playbooks to enable environment for deployment.
+--	Maintaining AMIs of the Configured Ec2 instances.
+
+
+
+CHEF
+
+-- Editing and running cookbooks
+
+
+
+Linux Job Responsibilities:
+Ensure systems running at peak performance, upgrade operating system, patches, and version upgrades as required.
+
+--	Troubleshooting deployment, infrastructure and start up issues on various application servers product line
+-- Managed and Installing Redhat OS 5 and 6&7 on HP DL Servers and HP c7000 Blades Hardware.
+-- Managed Virtualization Environment using VM Ware ESX 5.x, Virtual Center, VI Client
+-- Installation, Configuration, Administration and Troubleshooting of ESX 5.x, Virtual Center, VI Client
+-- Creating and Managing Virtual Machines and Templates
+-- Creating Clusters for High Availability (HA) and Distributive Resource Scheduling (DRS)
+-- Migrating Servers Windows to Linux
+-- Designing, Configuring and maintaining Apache load balancer on Readhat Linux Server
+-- Installing and Configuring SAMBA on Redhat Linux Servers.
+-- Installing and Configuring Mysql 
+-- Installing and Configuring Nagios to monitor all Linux Servers.
+-- Providing Level 3 Remote LINUX System Administration.
+-- Remote administration through Putty, SSH.
+-- configuring the private repository for accessing the packages with YUM.
+-- Experience on file system and disk management and managing disk quotas.
+•	Physically managing the servers as well as involved in the Data Centre activities along with remote system administration. As a SPOC provided active and timely support to other sites (Sun Solaris Server and Linux)
+•	Server Management and provide L2 Support for Linux&VMware ESX servers and provide L1 support for NAS storage and VERITAS Net backup.
+•	Experience with operational monitoring of clusters and applications
+•	Knowledge on Shell Scripting for automating tasks for regular usage and system operations.
+
+
+Vagrant
+--	Expertise in creating & maintaining the infrastructure for different test Environments and provisioning them using Vagrant and virtual-box.
+--	I have personally used vagrant for testing automation scripts before configuring them in real time servers.
+--	
+--	
+
+NEXUS
+--	Responsible for maintaining backup and versioning of war/ear file using nexus repository.
+--	Managed Nexus repositories to download the artifacts (jar, war & ear) during the build.
+--	Managing Jenkins artifacts in Nexus repository and versioning the artifacts with time stamp.
+--	Installed and Configured Nexus repository for all Snapshot and Release versions
+--	Expertise with Maven Dependency, plugin and nexus repository management during the builds.
+--	Installed and administered nexus repository and created roles and privileges to restrict access to the users
+--	Expertise in Enterprise repository management tools like Nexus, Artifactory etc.
+--	Installed and administered nexus repository and created roles and privileges to restrict access to the users
+
+SONARQUBE
+
+--	Installed and configured SonarQube 4.5
+--	Installed MYSQL and configured database schemas for SonarQube 4.5
+--	Upgraded SonarQube from 4.4 to 4.5
+
+
+JIRA
+--	Installed and administer Atlassian tool set including JIRA, Confluence.
+--	Planned and executed the migration from Bugzilla-based bug-tracking into the Atlassian-based suite (JIRA, Confluence)
+
+
+Other:
+--	Hands on experience in configuring and maintaining the Webserver like Apache, Tomcat and App servers like Weblogic, Web sphere and JBoss
+--	Experience with web and application servers (Apache http server, Tomcat)
+--	Experience with some distributed databases like MongoDB, Elasticsearch, Redis in Linux environment etc.
+
+

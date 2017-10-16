@@ -1,0 +1,10 @@
+
+-Dorg.eclipse.swt.internal.gtk.cairoGraphics=false" to eclipse.ini.
+-license ClearCase TEMPORARY .300 20301231 zhouzhan.754229ce.02
+-license MultiSite TEMPORARY .300 20301231 zhouzhan.1e3d6d0b.02
+-license Attache TEMPORARY .300 20301231 zhouzhan.43a03d85.02
+-license Attache-MultiSite TEMPORARY .300 20301231 zhouzhan.31bd9392.02
+-license ClearGuide TEMPORARY .300 20301231 zhouzhan.f9019440.02
+-license ClearTrack TEMPORARY .300 20301231 zhouzhan.520f62c7.02
+-license ClearTrack_C TEMPORARY .300 20301231 zhouzhan.0adef409.02
+-license PDDTS TEMPORARY .300 20301231 zhouzhan.57e3f7ca.02

@@ -1,0 +1,63 @@
+
+erich:
+
+ 
+
+---golden image configure ..
+We will take golden image(same as prod) and create instances..
+similar to prod...
+
+
+[‎9/‎5/‎2017 7:27 PM] Agrawal, Abhinav (US - Hyderabad): 
+add morahim@deloitte.com  also
+abhinagrawal@deloitte.com
+
+
+
+
+[‎9/‎5/‎2017 7:16 PM] Agrawal, Abhinav (US - Hyderabad): 
+Hi Harish
+[‎9/‎5/‎2017 7:17 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+Hi Abhinav
+[‎9/‎5/‎2017 7:17 PM] Agrawal, Abhinav (US - Hyderabad): 
+can you please explain me more about your requirement
+[‎9/‎5/‎2017 7:18 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+You mean regarding, request i raised for golden image?
+[‎9/‎5/‎2017 7:18 PM] Agrawal, Abhinav (US - Hyderabad): 
+yes
+[‎9/‎5/‎2017 7:19 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+We are Decomissioning  our Dev, QA servers for RMC completely
+[‎9/‎5/‎2017 7:20 PM] Agrawal, Abhinav (US - Hyderabad): 
+ok
+[‎9/‎5/‎2017 7:20 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+And on stage environment, we want to create new VDI instances from Golden image
+and configure them accordingly
+[‎9/‎5/‎2017 7:21 PM] Agrawal, Abhinav (US - Hyderabad): 
+What time Ashok is coming tom ?
+[‎9/‎5/‎2017 7:22 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+he got viral fever, and will be coming after 2 days
+[‎9/‎5/‎2017 7:22 PM] Agrawal, Abhinav (US - Hyderabad): 
+hmmm
+[‎9/‎5/‎2017 7:23 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+If you want more info, i can pull Bhanu/rasesh
+[‎9/‎5/‎2017 7:23 PM] Agrawal, Abhinav (US - Hyderabad): 
+cool
+schedule a meeting tom with me 
+I am in 11-8
+[‎9/‎5/‎2017 7:24 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+ok..
+then no need to have a call with Erich right..
+[‎9/‎5/‎2017 7:25 PM] Agrawal, Abhinav (US - Hyderabad): 
+not for now
+let me understand the requirement first
+[‎9/‎5/‎2017 7:25 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+ok
+[‎9/‎5/‎2017 7:27 PM] Agrawal, Abhinav (US - Hyderabad): 
+add morahim@deloitte.com  also
+[‎9/‎5/‎2017 7:27 PM] Balusu, Venkata Sri Harish (US - Hyderabad): 
+yep...sure
+
+
+
+
+
