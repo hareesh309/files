@@ -1,0 +1,91 @@
+ how to set up nginx to serve out static content
+ how to configure nginx as a proxy server, and 
+ how to connect it with a FastCGI application.
+ 
+ By default, the configuration file is named nginx.conf and placed in the directory /usr/local/nginx/conf, /etc/nginx, or /usr/local/etc/nginx.
+ 
+sudo nginx -t  --Test The Configuration
+sudo service nginx restart
+
+
+nginx -s signal  ---Where signal is:
+stop — fast shutdown
+quit — graceful shutdown
+reload — reloading the configuration file, without restart
+reopen — reopening the log files
+
+wget -qO- localhost
+
+
+BLOCKS
+sudo vim /etc/nginx/nginx.conf
+events {
+}
+
+http {
+       server {
+              location / {
+                      root /data/www;
+              }
+       }
+}
+
+server:if you have many different websites that point it to the same server you will have one server block for each website so I might have if I had my domain a.com and my domain be calm I would have one one server block for a my de Bain a.com and another server block below here for the my domain b.com domain 
+server block needs to look for data in a specific location in our file system and that location is /data/www 
+
+
+
+The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+
+
+Starting with Ubuntu 15.04, Upstart will be deprecated in favor of Systemd. With Systemd to manage the services we can do the following:
+
+systemctl start SERVICE - Use it to start a service. Does not persist after reboot
+
+systemctl stop SERVICE - Use it to stop a service. Does not persist after reboot
+
+systemctl restart SERVICE - Use it to restart a service
+
+systemctl reload SERVICE - If the service supports it, it will reload the config files related to it without interrupting any process that is using the service.
+
+systemctl status SERVICE - Shows the status of a service. Tells whether a service is currently running.
+
+systemctl enable SERVICE - Turns the service on, on the next reboot or on the next start event. It persists after reboot.
+
+systemctl disable SERVICE - Turns the service off on the next reboot or on the next stop event. It persists after reboot.
+
+systemctl is-enabled SERVICE - Check if a service is currently configured to start or not on the next reboot.
+
+systemctl is-active SERVICE - Check if a service is currently active.
+
+systemctl show SERVICE - Show all the information about the service.
+
+sudo systemctl mask SERVICE - Completely disable a service by linking it to /dev/null; you cannot start the service manually or enable the service.
+
+sudo systemctl unmask SERVICE - Removes the link to /dev/null and restores the ability to enable and or manually start the service.
+
+chkconfig
+And third option would be chkconfig,
+
+sudo apt-get install chkconfig
+It can be used via CLI chkconfig, showing list of On/Off jobs. Also we can view system services using chkconfig –list
+
+Services can be turned on using
+
+chkconfig <service> on
+Services can be turned off using
+
+chkconfig <service> off
+And we can even add our own service, using a proper init script with proper headings.
+
+chkconfig --add <service>

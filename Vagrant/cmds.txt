@@ -1,0 +1,69 @@
+vagrant --version
+vboxmanage --version
+wget https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub -O .ssh/authorized_keys
+
+
+vagrant plugin install vagrant-hostsupdater---
+
+vagrant.exe up -h
+export VAGRANT_LOG=debug   (or)   vagrant stats --debug    (pass --debug command)
+atlas hashicorp boxes
+vagrant box add centos/7 ----Download and add to vagrant local repository
+vagrant init ubuntu/trusty64
+vagrant box list
+bento/ubuntu-16.04 (virtualbox, 201710.25.0)
+vagrant init centos/7; vagrant up --provider vmware_desktop    (default provider virtualbox)
+vboxmanage setproperty machineproperty /app_store/virtualmachine
+df -h /app_store/virtualmachine
+vagrant ssh-config
+ssh -p 2222 127.0.0.1 -l vagrant -i /app_store/.vagrant/defualt/virtualbox/private_key
+$ vagrant.exe global-status
+id       name    provider   state   directory
+------------------------------------------------------------------------
+aeff01c  default virtualbox running C:/Mylab/gitlab/Vagrant
+079084f  default virtualbox running C:/Mylab/gitlab
+vagrant port 079084f
+vagrant halt 079084f
+vagrant destroy 079084f
+vagrant suspend---Takes extra space however
+vagrant resume
+vagrant ip-show  --->for this install plugin (vagrant-ip-show)
+OR
+vagrant.exe ssh -c "ifconfig -a"
+symfony.vm.network "forwarded_port", guest: 80, host: 8080, id: "nginx"   ----better add ID
+
+vboxmanage list vms
+vboxmanage list runningvms
+
+Provisoning only runs when we first creates machine, Otherwise manually trigger using vagrant provision.
+Reason:The software we install with provisioning doesn't tend to change that often. Provisioning is also typically time consuming and it's not guaranteed to be idempotent. Idempotent means an action that produces the same result when run multiple times.
+vagrant provision
+
+Vagrant reload. This is the same as calling Vagrant halt to power the machine off, followed by calling Vagrant up.   
+During Vagrant up, Vagrant will apply the changes we made to the Vagrant file, but notice that it warns us that the machine is already provisioned and if we would like to reprovision it we'll have to make a call to Vagrant provision.
+
+# Tell vagrant to SHELL Provisioner
+         symfony.vm.provision "shell", path: "provision.sh"
+            
+# Tell vagrant to run ansible as a provisioner
+        symfony.vm.provision :ansible do |ansible|
+            # where the playbook is located
+            ansible.playbook = "provisioning/playbook.yml"
+			end
+Note: End will be there for ansible provisioner
+
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "hashicorp/precise32"
+  config.vm.provision "shell", path: "provision.sh"
+  config.vm.network "forwarded_port", guest: 80, host: 8080, id: "nginx"
+end
+
+
+			
+
+
+
+
+
+

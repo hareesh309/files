@@ -1,0 +1,8 @@
+sudo apt-get install -y mysql-server
+service mysql status
+mysql -u root –p
+CREATE DATABASE myproject;----Create dabase
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'mypassword';----Create user to be able to connect to database
+GRANT ALL PRIVILEGES ON myproject.* TO 'user1'@'localhost'; ----Granting all priveleges on Project to user.
+Also means user will not be having privileges other than, he normally have on APPLICATION DB
+FLUSH PRIVILEGES;---Since we are creating password, and giving privileges to user...run this command

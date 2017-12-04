@@ -34,7 +34,7 @@ SVN
 
 GIT
 
---Private Git server i=on Windows(Git server on private n/w)
+--Private Git server on Windows OS (Git server located on private n/w)
 
 --	Installed and configured Gitweb for Git
 --	Updated existing shell scripts to reflect GIT changes
