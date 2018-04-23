@@ -1,0 +1,64 @@
+designing an enterprise server , network , and storage architecture to support a core business platform and additional services on an Amazon Virtual Private Cloud.
+designing the overall Virtual Private Cloud VPC environment including server instance , storage instances , subnets , availability zones , etc.	
+Experience of designing the AWS network architecture including VPN connectivity between regions and subnets	
+Should know how to design the AWS AMI architecture including machine templates and blueprints	
+Knowledge of designing the HA / DR strategies.
+	
+Strong understanding of the EC2 instance types and ability to create the BoM on AWS based on the application usage needs
+Strong Experience in designing & implementing security (with VPC, IAM, Security Groups, UTM solutions, NACLS etc.)
+Strong understanding of AWS Storage, Database, Security services
+Strong understanding of AWS billing and ability to provide cost optimal architectural designs
+Demonstrated knowledge of standard IP networking technologies, switching, routing, firewalls, load balancing, DNS, DHCP, etc
+Broad exposure to Open Source tools to include automation, security, networking and database
+Evaluate the applications deployed in production and make recommendations to improve security, scalability, performance and availability
+
+- Experience in architecting Cloud automation and configuration management solutions using infrastructure as code and working with tools, including CloudFormation, Chef, Puppet, Ansible, Salt, and Docker
+
+- Experience with a breadth of technologies across operating systems, application servers, database and middleware infrastructure, including Linux and Windows environments
+
+- Possession of excellent oral and written communication skillsMinimum 5+ years of good hand-on experience with AWS foundation services related to compute, network, storage, content delivery, administration and security, deployment and management, automation technologies. 
+Strong architecture & design experience of Deploying Enterprise applications on AWS, monitoring and performance tuning of deployed applications on AWS 
+Expertise in Infra capacity sizing, costing of AWS services to drive optimized solution architecture, leading to optimal infra investment vs performance and scale 
+Expertise in articulating architectural choices within various AWS services and solution methodologies 
+Proficiency in AWS Data PaaS (EMR, S3, Glue, Redshift, DynamoDB, Elasticsearch). 
+
+
+"1. Evaluate, Design & Plan deployment of infrastructures for Public cloud based multi-tenant services in AWS, Google Cloud, Azure, etc. and Private cloud based multi-tenant services in VMware vCloud, Openstack, etc.
+2. Evaluate, Design & Plan deployments of Cloud Connectivity like Direct Conenct, Express Route, etc.
+3. Evaluate Design & Plan Application migration to PaaS/SaaS in AWS, Google Cloud & Azure
+4. Design & Plan load balancing, appServer clustering, network, Infrastructure and Single Sign-on based web application development in cloud
+5. Design & Plan deployment of configuration management tools such as chef, puppet or ansible
+6. Design & Plan Security in cloud for Servers, Network & Storages
+7. Evaluate & Design Hybrid cloud/Multi cloud migrations
+8. Design Monitoring of Cloud services using NewRelic, CloudWatch, Prometheus, or Zabbix
+9. Design Networking and Perimeter devices such as Firewall, Load Balancers, Routers and Content Filters 
+10. Design & Plan migartion of databases, including database design, querying, loading and performance optimization to cloud
+11. Automation & Cost optimization methodologies in cloud
+12. Work closely with Business, Application & Operations team to identify cloud requirements & provide solution"
+
+ understand current application workloads, Understand and document technical requirements from clients, Define Migration strategy to move application to cloud, Develop architecture blueprints and detailed documentation. 
+ 
+ Create bill of materials, including required Cloud Services (such as EC2, S3 etc.) and tools.
+ AWS infrastructure experience on EC2, ECS, VPC, Direct Connect, S3, RDS, analytics, and application services. 
+ 
+ Ability to deploy multi- tier application across a custom defined Virtual Private Cloud. 
+ 
+ Ability to design scalable, secure, reliable and efficient technical cloud ecosystems to support enterprise applications.
+ 
+ Amazon Cloud arcitecture for scaling and elasticity. Experience advising on best practice guidelines for migration of services to the cloud considering the various cloud migration techniques. 
+ 
+ Make recommendations on performance optimization on AWS with know how on bandwidth (Vertical and Horizontal) of AWS services
+Design and Develop highly scalable, available and reliable systems on AWS.
+Develop strategies for shift of on-premise systems to AWS
+Develop cost optimal solutions for ingress and egress of data between AWS and on-premise applications.
+Lead the process of selecting the appropriate AWS services based on Non-functional requirements and budgets.
+Define and develop the AWS standards, best practices and organizational capability.
+Participate and provide solutions during the non-functional testing related to AWS ecosystem
+Provide inputs to project management team for project estimation, technology risks, milestones, status reporting etc.
+Troubleshoot application issues and coordinate issue resolution with operations, functional, and technical teams
+
+1. Architect, Design and Assist in deploying dynamically scalable, highly available, fault tolerant, and reliable enterprise applications on AWS.
+2. Proven track record on migrating complex, multi-tier enterprise application to AWS and providing efficient cloud solutions.
+3. Implement cost control strategies and optimization of existing AWS services, understand the metrics of AWS processes for recommendations on cost savings.
+Create the next generation of tools and infrastructure for build, test, release and monitoring, focusing on developer productivity, release velocity and product quality.
+Define, collect and report metrics that measure progress and performance of the build and deployment infrastructure
