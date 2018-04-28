@@ -1,0 +1,100 @@
+ AWS Cloud Engineer /Solution Architect 
+  
+ * Designing and creating highly scalable, highly available, fault tolerant, highly secured, distributed infrastructure (IAAS) using AWS EC2 instances, EBS Snapshot, S3, Elastic Load Balancer, Auto Scaling, Cloud Watch, Cloud Formation, RDS, KMS, Lambda, Redshift, SNS etc.
+ * Provided Migration plan and strategy for cloud, and strategy to migrate infrastructure and data from On-prem data center/VM to AWS Cloud 
+ * Actively involved in configuration of SSO integration between Local User repository (like LDAP) of local datacenter and AWS IAM using SAML 
+ • Setup/Managing Linux Servers on Amazon (EC2, EBS, ELB, SSL, Security Groups, RDS and IAM) 
+
+
+
+ 
+• Working as a AWS Sysops and solution architect for cloud infrastructure services. 
+• Worked extensively with AWS services like EC2, S3, VPC, ELB, AutoScaling, Route 53, IAM, CloudTrail, 
+CloudWatch, CloudFormation, CloudFront, SNS, and RDS. 
+
+EC2
+• Worked on AWS EC2 services, creating instance, backup and manages them. 
+• Created snapshots to take backups of the volumes and images to store launch configurations of the EC2 
+instances.
+• Experience in creating and launching EC2 instances using AMI's of Linux, and Window. 
+• Building security at every layer using routing rules, network ACLs, and security groups. 
+• Used Amazon IAM to grant fine access of AWS resources to users. Also managed roles and permissions of users to AWS account through IAM. 
+ Deploy and configure various Applications on EC2 
+• Creating/Managing AMI/Snapshots/Volumes, Upgrade/downgrade AWS resources (CPU, Memory, EBS) 
+
+ 
+
+
+RDS
+• Implemented Amazon RDS multi-AZ for automatic failover and high availability 
+• Knowledge of non RDS database like Dynamo DB, Redshift. 
+• Configuration and management of amazon RDS database, read replica and backup scheduling. 
+ Creating RDS with Multi-AZ and Read Replica for high availability 
+
+
+S3
+• Configured S3 buckets with various life cycle policies to archive the infrequently accessed data to storage classes 
+based on requirement. 
+• Created S3 buckets in the AWS environment to store files, sometimes which are required to serve static content 
+for a web application. 
+• Good knowledge of storage option like EBS, S3, Glacier.
+ Create and configure S3 bucket with restricted polices and S3 lifecycle(Glacier) 
+ Take caring of data encryption stored in s3 buckets 
+ Cost optimization in storage using life cycle management(Glacier) Creating S3 buckets and upload the data into particular buckets 
+ Hosting static website and deploying updated contents using versioning 
+ Recording object level activity using the cloud trail data events feature  
+ Maintaining server level access logging  
+ Hands on experience CloudFront to access the data by users with low latency and with secure 
+ Maintaining DNS management using Route53 
+ Managing Receive Notifications when specific events occur in buckets using SNS service 
+ Hands on Experience on cross region replication 
+• Create/Managing buckets on S3 (CLI) and store db and logs backup, upload images for CDN serve. 
+
+
+
+VPC
+• Experienced in creating multiple VPC's and public, private subnets as per requirement and distributed them as groups into various availability zones of the VPC. 
+• Configuration and implementation of VPC endpoint, peering & VPN connection.
+• Created NAT gateways and instances to allow communication from the private instances to the internet.
+  Established peering connections between VPC'S  
+ 
+
+IAM
+• Used IAM for creating roles, users, groups and implemented MFA to provide additional security to AWS account 
+and its resources. 
+ • Used security groups, network ACL's, internet gateways and route tables to ensure a secure zone for organization in AWS public cloud. 
+• Experience in IAM to create new accounts, roles, groups and Policies 
+ 
+ Route 53
+• Implemented domain name service (DNS) through route 53 to have highly available and scalable applications. 
+• Create/Managing buckets on S3 and store DB and logs backup, upload images for CDN server. 
+• Used Cloud Watch logs to move application logs to S3 and create alarms raised by applications. 
+ Migrating and managing DNS entries in Route53 
+• Creating/Managing DNS records on Amazon Route 53 and go-daddy panel. 
+
+
+
+
+
+ELB
+• Created Highly Available Environments using Auto-Scaling, Load Balancers, and SQS. 
+• Knowledge and implementation of elastic load balancing and auto scaling and policy. 
+• Set up Elastic Load Balancers for different applications to ensure high availability of applications.
+• Set up Auto Scaling Groups based on CPU to adapt to unforeseen spikes without having an outage or needing manual intervention. 
+ Designing and deploying highly scalable infrastructure using ELB and Auto scalling 
+
+ 
+
+
+
+Other Services:
+• Knowledge of Elastic Beanstalk, SNS, SQS, Elastic cache, Kinesis. 
+• Experience in Cloud Watch service, Cloud trail for monitoring and Auditing AWS resources. 
+ Cloud Front setup for low latency for fast loading website/web contents experience 
+ Hands on experience on notification services-SNS  
+ Configuration of Cloud watch logs
+
+
+
+Others:
+Interacting with CMT to capture requirements.

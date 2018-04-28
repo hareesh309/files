@@ -1,0 +1,106 @@
+Major Projects Handled: 
+ 
+Project 1# 
+ 
+Project Title : Arbitrage  
+ 
+• Client : IBS 
+• Role : AWS Architect and Technical Consultant  
+• Module : Reprising Engine 
+•  
+• Description: Arbitrage is 24x7 running application and handle the selling process one market place to another market place. In this process we get price from multiple vendors and update a sander price as per our business on our market place.  
+• Technology Used (Reprising Engine): EC2, RDS, ELB , Auto scaling ,VPC , MWS, AWS ,CloudWatch , CloudTrail, Github core Java, MySQL, Web Service. 
+• Support for development and build Technical Architect. 
+• Support to Fixing the bugs with development team and testing team. 
+• Monitor the application running process. 
+• Provide the support as per business requirement  
+ 
+Project2# 
+ 
+Project Title : Non-Banking Finance Company 
+ 
+• Client : NBFC 
+• Role : AWS Solution Architect 
+• Module : Admin Panel, Banker Screen(Checker And Maker Concept) 
+ 
+• Description: This is the Central Government project and direct monitored by PMO. NBFC (Non-Banking Finance Company) Direct Support all banking and Non-banking sector company for micro finance. It give guaranty for the lone to MLI(Bank). 
+• Technology Used (NBFC): EC2, RDS, ELB , Auto scaling ,VPC , AWS, CloudWatch , CloudTrail, CloudFormation, Spring MVC, Hibernate and Web Service(REST) 
+• Support Backend development. 
+• Support Fixing the bugs on development 
+ 
+Project 3# 
+ 
+Project Title : ECCS 
+Tool Used : Core Java, Servlet, JSP, Struts 2.0, java script,  
+Oracle 11g, HTML, CSS, 
+Jasper Report  
+Position : Developer 
+ 
+Description: The Express Cargo Clearance System (ECCS) is related to import and export clearance process. In this courier company can field shipment detail after that custodian do a arrival scan for shipment and give a exit scan to the shipment. 
+ 
+Role 
+• Add new functionality as per Change Request(CR) by customer 
+• Writing procedure for several module 
+• Involve in implementing Digital signature 
+• Coding for creating Jasper Report. 
+• Involve in Data Base handling. 
+• Coding for perform exit scan for shipment. 
+• Involve in writing Test Case 
+Personal Details : 
+ 
+• Father Name : Shri Dinesh Chand Tyagi 
+• Mother Name : Shreekanta Devi 
+• Martial Status : Married 
+• Present Address : Flat No 307,Third Floor,Ganesh Plaza , 
+Building no 3,Gnesh Nahar Socicty,Near  
+SMG School,Agasan Road,Diva East-Thane. 
+ 
+I hereby declare that the particulars in this application are true to the best of my knowledge and brief. If any information giver is false, my candidature is liable to be cancelled. 
+ 
+Date: 
+Place: Mumbai Saurav Tyagi
+
+Work Experience
+DevOps Engineer
+
+Path Infotech Ltd. - Mumbai, Maharashtra
+February 2016 to Present
+
+• Description: Arbitrage is 24x7 running application and handle the selling process one market place to another market place. In this process we get price from multiple vendors and update a sander price as per our business on our market place.  
+• Technology Used (Reprising Engine): EC2, RDS, ELB , Auto scaling ,VPC , MWS, AWS, JSON,CloudTrail,CloudFormation,core Java, MySQL, Web Service. 
+• Support for development and build Technical Architect. 
+• Support to Fixing the bugs with development team and testing team. 
+• Monitor the application running process. 
+• Provide the support as per business requirement
+
+DevOps Engineer
+
+Eveear Technologies Inc - Delhi, Delhi
+2016 to December 2016
+
+• • Description: This is the Central Government project and direct monitored by PMO. NBFC (Non-Banking Finance Company) Direct Support all banking and Non-banking sector company for micro finance. It give guaranty for the lone to MLI(Bank). 
+• Technology Used (NBFC): EC2, RDS, ELB , Auto scaling ,VPC , AWS, CloudWatch , CloudTrail, CloudFormation, Spring MVC, Hibernate and Web Service(REST) 
+• Support Backend development. 
+• Support Fixing the bugs on development
+
+AWS Solution Architect
+
+Pacific IT Consulting Pvt. LTD - Delhi, Delhi
+February 2016 to June 2016
+
+Technology : EC2, RDS, ELB , Auto scaling ,VPC , AWS, Cloud Watch , CloudTrail , 
+CloudFormation, Core Java, Servlet, JSP, Struts 2.0, java script,  
+Oracle 11g, HTML, CSS, 
+Jasper Report  
+Position : AWS Solution Architect(Supporting Architect) 
+ 
+Description: The Express Cargo Clearance System (ECCS) is related to import and export clearance process. In this courier company can field shipment detail after that custodian do a arrival scan for shipment and give a exit scan to the shipment. 
+ 
+Role 
+• Add new functionality as per Change Request(CR) by customer 
+• Writing procedure for several module 
+• Involve in implementing Digital signature 
+• Coding for creating Jasper Report. 
+• Involve in Data Base handling. 
+• Coding for perform exit scan for shipment. 
+• Involve in writing Test Case
