@@ -1,0 +1,66 @@
+Amazons SNS (Simple Notification Service ) service to publish email notification 
+SES (Simple Email Service) 
+SQS(Simple Queue Service) 
+
+SES: Amazon Simple Email Service (Amazon SES) is a cost-effective email service built on the reliable and scalable infrastructure that Amazon.com developed to serve its own customer base.
+
+SNS : SNS is a fully managed push notification service that lets you send individual messages or to fan-out messages to large numbers of recipients. Amazon SNS makes it simple and cost effective to send push notifications to mobile device users, email recipients or even send messages to other distributed services.
+
+SQS: SQS refers to a message queuing service for reliably communicating among distributed software components and microservices - at any scale
+
+
+
+Amazon SES eliminates the complexity and expense of building an in-house email solution or licensing, installing, and operating a third-party email service. The service integrates with other AWS services, making it easy to send emails from applications being hosted on services such as Amazon EC2.
+
+Amazon Simple Notification Service makes it simple and cost-effective to push to mobile devices such as iPhone, iPad, Android, Kindle Fire, and internet connected smart devices, as well as pushing to other distributed services. Besides pushing cloud notifications directly to mobile devices, SNS can also deliver notifications by SMS text message or email, to Simple Queue Service (SQS) queues, or to any HTTP endpoint
+
+
+
+1.)To send emails through SNS, the email address must be subscribed to an SNS topic. Subscribing an email address to a topic requires opt-in confirmation from the owner of the email address. SNS is orientated toward broadcast sending.
+
+SES can support point-to-point sending and has no support for broadcast today. More information about SNS subscription is available in the SNS API reference. By comparison, SES can send to any email address with no prior confirmation. 
+
+
+ 
+ 
+ 
+ 2.)SES provides full support for a rich email experience, such as HTML, links, and embedded images.
+
+ SNS allows you to publish notifications across multiple protocols, such as HTTP, SQS, and email. Because SNS is opt-in only, it is easier for us to ensure good email deliverability with SNS, and we can pass this cost saving onto our customers: SNS has a lower price per email than SES.
+ 
+ 
+ 
+ 
+Amazon Simple Email Service (Amazon SES) is for applications that need to send arbitrary communications via email. Amazon SES supports custom email header fields, and many MIME types.
+
+Amazon Simple Notification Service (Amazon SNS) is for messaging-oriented applications, with multiple subscribers requesting and receiving "push" notifications of time-critical messages via a choice of transport protocols, including HTTP, Amazon SQS, and email. 
+
+The body of an Amazon SNS notification is limited to 8192 characters of UTF-8 strings, and is not intended to support multimedia content..
+
+
+
+SES is meant for sending high volume e-mail efficiently and securely. Once you have verified that you are the owner of an e-mail address, you can send e-mails through SES to any other e-mail address without the recipient's consent.  SES takes care of the engineering required to ensure delivery of their e-mails (as might be obvious, without the right levels of security, SES can be a spammers dream).
+
+SNS is meant as a channel publisher/subscriber service. In order to receive e-mails from SNS, the end-user must first subscribe (via means enabled by the developer) and approve that subscription through e-mail before amazon delivers e-mails from the subscribed channel to that end-user. End-users can subscribe via e-mail, SMS, web-hooks and other means up to the user independent of the publisher.
+
+On a practical level, we use SES to send our users e-mails about their content and we use SNS to send our developers notifications (via SMS and e-mail) when servers go down or have issues.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
