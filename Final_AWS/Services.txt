@@ -1,0 +1,10 @@
+Compute: Ec2, ECS, Lambda
+Storage: S3, EFS, Glacier, EBS , Instance store, Storagee Gateway
+Message: SNS, SQS, SES
+Monitor: Cloudwatch, Cloudtrial,CloudFront, CloudFormation
+Network: VPC, VPC peering, DirectConnect, VPN, VPCflow
+Database: Arora, RDS, DynamoDB
+Docker: Elastic Beanstalk
+Load balancer: Route53, ALB, Classic, Network, Autoscaling
+Security: IAM, Certificate Manager
+Others: Kinesis, CodeDeploy, Redshift, Elastic cache, SWF, EMR
