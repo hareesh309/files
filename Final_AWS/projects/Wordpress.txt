@@ -1,0 +1,57 @@
+
+https://www.inkthemes.com/how-to-install-wordpress-on-amazon-aws-ec2/
+http://devoncmather.com/setting-aws-ec2-instance-lamp-git/
+https://trodzen.wordpress.com/2017/01/20/lamp-on-linux-amazon-ec2/
+
+root@ip-172-31-27-6:/var/www/html# history
+
+    2  apt-get install apache2 -y
+    4  apt-get update -y
+    5  apt-get install apache2 -y
+    6  apt-get install php5
+    7  apt-get install php
+    8  apt-get install libapache2-mod-php5
+    9  apt-get install libapache2-mod-php
+   10  /etc/init.d/apache2 restart
+   11  cd /var/www/
+   12  ls
+   13  vim
+   14  vim mytest.php
+   15  pwd
+   16  ls
+   17  /etc/init.d/apache2 restart
+   20  apt-get install -y elinks
+   21  ls
+   22  mv mytest.php html/
+   23  elinks http://ec2-13-126-220-196.ap-south-1.compute.amazonaws.com/
+   24  elinks http://ec2-13-126-220-196.ap-south-1.compute.amazonaws.com/mytest.php
+   25  vim html/mytest.php
+   26  elinks http://ec2-13-126-220-196.ap-south-1.compute.amazonaws.com/mytest.php
+   27  vim html/mytest.php
+   28  apt-get install MySQL-server
+   29  apt-get install mySQL-server
+   30  apt-get install mysql-server
+   31  apt-get install php5-MySQL
+   32  apt-get install php5-mysql
+   33  apt-get install php-mysql
+   34  apt-get install libapache2-mod-auth-MySQL
+   35  apt-get install libapache2-mod-auth-mysql
+   36  apt-get install libapache-mod-auth-mysql
+   37  apt-get install libapache2-mod-auth-mysql
+   38  sudo apt-get install mysql-server php5-mysql phpmyadmin
+   39  sudo apt-get install mysql-server php-mysql phpmyadmin
+   40  ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf.d/phpmyadmin.conf
+   41  ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+   42  /etc/init.d/apache2 reload
+   43  cd
+   44  wget https://wordpress.org/latest.tar.gz
+   45  tar -xzvf latest.tar.gz -C /var/www
+   46  cp -avr /var/www/wordpress/* /var/www
+   47  rm -rf /var/www/WordPress
+   48  ls
+   49  cd /var/www/
+   50  ls
+   51  mv * html/
+   52  ls
+   53  cd html/
+   54  vim wp-config.php
