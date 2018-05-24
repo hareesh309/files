@@ -1,4 +1,7 @@
  AWS Cloud Engineer /Solution Architect 
+ 
+ Architecting solutions, migration and implementaing .. and monitoring 
+ AWS --Implementing existing solutions/resources in different way
   
  * Designing and creating highly scalable, highly available, fault tolerant, highly secured, distributed infrastructure (IAAS) using AWS EC2 instances, EBS Snapshot, S3, Elastic Load Balancer, Auto Scaling, Cloud Watch, Cloud Formation, RDS, KMS, Lambda, Redshift, SNS etc.
  * Provided Migration plan and strategy for cloud, and strategy to migrate infrastructure and data from On-prem data center/VM to AWS Cloud 
