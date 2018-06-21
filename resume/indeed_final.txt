@@ -1,4 +1,4 @@
- AWS Cloud Engineer /Solution Architect 
+AWS Cloud Engineer /Solution Architect 
  
  Architecting solutions, migration and implementaing .. and monitoring 
  AWS --Implementing existing solutions/resources in different way
@@ -74,8 +74,6 @@ and its resources.
 • Used Cloud Watch logs to move application logs to S3 and create alarms raised by applications. 
  Migrating and managing DNS entries in Route53 
 • Creating/Managing DNS records on Amazon Route 53 and go-daddy panel. 
-
-
 
 
 

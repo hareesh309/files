@@ -1,0 +1,5 @@
+--
+2	- hosts: all
+3	tasks:
+4	- yum: name=ntp state=installed
+5	- service: name=ntpd state=started enabled=yes

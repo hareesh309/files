@@ -1,0 +1,65 @@
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "DevOps_Server_7" --type headless
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "Centos68" --type headless
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "Ubuntu" --type headless
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "DevOps_client" --type headless
+
+
+"c:\program files\oracle\virtualbox\vboxmanage.exe" controlvm "DevOps_Server_7" poweroff
+"c:\program files\oracle\virtualbox\vboxmanage.exe" controlvm "Centos68" poweroff
+"c:\program files\oracle\virtualbox\vboxmanage.exe" controlvm "Ubuntu" poweroff
+"c:\program files\oracle\virtualbox\vboxmanage.exe" controlvm "DevOps_client" poweroff
+
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" list vms 
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" list runningvms
+
+
+centos 7.4   ---server (controlserver)   ---192.168.56.101
+centos 7.4   ---lb01  ---192.168.56.110
+centos 6.8   ---app01 ---192.168.56.120
+ubuntu 16.04 ---db01  ---192.168.56.102
+
+192.168.56.101 controlserver
+192.168.56.110 lb01 
+192.168.56.120 app01 
+192.168.56.102 db01  
+
+sudo ifconfig enp0s8 down
+sudo ifconfig enp0s3 down
+
+vagrant.exe up control;vagrant.exe up lb01;vagrant.exe up app01;vagrant.exe up app02; vagrant.exe up db01;vagrant status
+
+
+/etc/ansible/hosts
+/etc/ansible/ansible.cfg--global
+ansible --list-hosts all (target)
+ansible -i dev --list-hosts
+
+[controlserver]
+control  ansible_connection=local
+
+ansible all -a   "free -m" -u  ansible
+ansible all -a "hostname"
+ansible all  -m ping
+export ANSIBLE_- HOSTS=/etc/ansible/hosts
+ansible all -s -m yum -a "name=ntp state=installed"
+ansible all -s -m service -a "name=ntpd state=started enabled=yes"
+ansible all -s -a "ls"
+ansible all -s -a "service ntpd stop"
+-s option (alias for --sudo)   -k (alias for --ask-sudo-pass)
+ansible all -s -a "tail /var/log/messages"
+As stated in the caveats, if you want to filter the messages log with something like grep, you can’t use Ansible’s default command module, but instead, shell:
+ansible all -s -m shell -a "tail /var/log/messages | \ grep ansible-command | wc -l"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
